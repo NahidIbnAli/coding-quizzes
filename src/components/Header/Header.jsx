@@ -19,7 +19,7 @@ const Header = () => {
         <div
           className={`flex flex-col lg:flex-row gap-4 lg:gap-7 font-medium absolute left-0 lg:static ${
             toggleMenu ? "top-[60px]" : "top-[-150px]"
-          } duration-500 ease-in-out z-10 text-center w-full lg:w-auto pb-4 lg:p-0`}
+          } duration-500 ease-in-out text-center w-full lg:w-auto pb-4 lg:p-0 bg-base-100 lg:bg-transparent`}
         >
           <NavLink>Topics</NavLink>
           <NavLink>Statistics</NavLink>
