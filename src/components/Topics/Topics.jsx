@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import Card from "../Card/Card";
 import HeroSection from "../HeroSection/HeroSection";
 
-const Home = () => {
+const Topics = () => {
   const quizCategories = useLoaderData().data;
   return (
     <div>
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Topics;

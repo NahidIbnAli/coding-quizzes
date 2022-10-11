@@ -1,8 +1,8 @@
 import React from "react";
-import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 
 const Card = ({ quizCategory }) => {
   const { name, logo, total } = quizCategory;
+
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
