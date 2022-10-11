@@ -3,7 +3,7 @@ import HeroImage from "../../assets/hero-image.svg";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4">
+    <div className="flex flex-col items-center gap-4">
       <div>
         <img className="w-56" src={HeroImage} alt="" />
       </div>
