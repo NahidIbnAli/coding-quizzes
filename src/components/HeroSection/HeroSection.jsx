@@ -9,8 +9,8 @@ const HeroSection = () => {
       </div>
       <div>
         <p className="text-xl text-center lg:w-3/5 mx-auto">
-          Are you a budding computer programmer? Take our quiz to see how much
-          you know about the world of coding!
+          Are you a budding web developer? Take our quiz to see how much you
+          know about the world of coding!
         </p>
       </div>
     </div>

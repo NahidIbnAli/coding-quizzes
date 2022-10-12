@@ -5,6 +5,7 @@ import Topics from "./components/Topics/Topics";
 import Blog from "./components/Blog/Blog";
 import quizDataLoader from "./loaders/quizDataLoader";
 import QuizContainer from "./components/QuizContainer/QuizContainer";
+import Statistics from "./components/Statistics/Statistics";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,8 @@ function App() {
         },
         {
           path: "statistics",
+          loader: quizDataLoader,
+          element: <Statistics></Statistics>,
         },
         {
           path: "blog",
