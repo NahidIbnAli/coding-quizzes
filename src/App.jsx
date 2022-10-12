@@ -6,6 +6,7 @@ import Blog from "./components/Blog/Blog";
 import quizDataLoader from "./loaders/quizDataLoader";
 import QuizContainer from "./components/QuizContainer/QuizContainer";
 import Statistics from "./components/Statistics/Statistics";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   const router = createBrowserRouter([
@@ -42,6 +43,10 @@ function App() {
           element: <QuizContainer></QuizContainer>,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <NotFound></NotFound>,
     },
   ]);
 
