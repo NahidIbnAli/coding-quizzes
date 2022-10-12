@@ -1,0 +1,6 @@
+.bg-img {
+  background-image: url(../../assets/404-error.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: contain;
+}
