@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
+import "./Header.css";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
