@@ -13,11 +13,10 @@ const Blog = () => {
           </div>
           <div className="collapse-content">
             <p>
-              React Router, and dynamic, client-side routing, allows us to build
-              a single-page web application with navigation without the page
-              refreshing as the user navigates. React Router uses component
-              structure to call components, which display the appropriate
-              information.
+              React Router is a standard library for routing in React. It
+              enables the navigation among views of various components in a
+              React Application, allows changing the browser URL, and keeps the
+              UI in sync with the URL.
             </p>
           </div>
         </div>
@@ -30,11 +29,11 @@ const Blog = () => {
           </div>
           <div className="collapse-content">
             <p>
-              It returns a consumer and a provider. Provider is a component that
-              as it's names suggests provides the state to its children. It will
-              hold the "store" and be the parent of all the components that
-              might need that store. Consumer as it so happens is a component
-              that consumes and uses the state.
+              The React Context API is a way for a React app to effectively
+              produce global variables that can be passed around. This is the
+              alternative to 'prop drilling' or moving props from grandparent to
+              child to parent, and so on. Context is also touted as an easier,
+              lighter approach to state management using Redux.
             </p>
           </div>
         </div>
@@ -43,14 +42,12 @@ const Blog = () => {
           className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
         >
           <div className="collapse-title text-xl font-medium">
-            What is useRef?
+            What is the usage of useHref in React?
           </div>
           <div className="collapse-content">
             <p>
-              The useRef Hook allows us to persist values between renders. It
-              can be used to store a mutable value that does not cause a
-              re-render when updated. And It can be used to access a DOM element
-              directly.
+              The useHref hook returns a URL that may be used to link to the
+              given to location, even outside of React Router.
             </p>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import Option from "../Option/Option";
 import { toast } from "react-toastify";
@@ -8,14 +7,6 @@ const Quiz = ({ questionDetails, quizCount }) => {
   const notify = () => toast.success(correctAnswer, { theme: "dark" });
   const rightAnswer = () => toast.success("Correct Answer", { theme: "dark" });
   const wrongAnswer = () => toast.error("Wrong Answer", { theme: "dark" });
-  const handleQuizResult = (option) => {
-    if (option === correctAnswer) {
-      rightAnswer();
-    } else {
-      wrongAnswer();
-    }
-  };
-  // console.log(questionDetails);
   return (
     <div className="card bg-base-100 shadow-xl">
       <div className="m-7">
@@ -28,9 +19,11 @@ const Quiz = ({ questionDetails, quizCount }) => {
         <div className="grid lg:grid-cols-2 gap-5">
           {options.map((option) => (
             <Option
-              handleQuizResult={handleQuizResult}
               key={option}
               option={option}
+              correctAnswer={correctAnswer}
+              rightAnswer={rightAnswer}
+              wrongAnswer={wrongAnswer}
             ></Option>
           ))}
         </div>

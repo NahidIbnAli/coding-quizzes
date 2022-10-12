@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Quiz from "../Quiz/Quiz";
 import { ToastContainer } from "react-toastify";
