@@ -1,5 +1,5 @@
 import React from "react";
-import errorImage from "../../assets/404 Error.svg";
+import errorImage from "../../assets/404-error.svg";
 
 const NotFound = () => {
   return (
